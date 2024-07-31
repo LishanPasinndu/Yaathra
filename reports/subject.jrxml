@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b79fa208-24bd-42aa-9ea3-3bb18ca0b413">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="yaathra"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM `subject` INNER JOIN `medium` ON `medium`.`id`=`subject`.`medium_id` WHERE `status`='1'  ORDER BY `subNo` ASC]]>
+	</queryString>
+	<field name="subNo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="subNo"/>
+		<property name="com.jaspersoft.studio.field.label" value="subNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="subject"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="subject"/>
+	</field>
+	<field name="status" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="subject"/>
+	</field>
+	<field name="medium_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="medium_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="medium_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="subject"/>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medium"/>
+	</field>
+	<field name="COLUMN_6" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medium"/>
+	</field>
+	<group name="subNo">
+		<groupExpression><![CDATA[$F{subNo}]]></groupExpression>
+	</group>
+	<group name="name">
+		<groupExpression><![CDATA[$F{name}]]></groupExpression>
+	</group>
+	<group name="status">
+		<groupExpression><![CDATA[$F{status}]]></groupExpression>
+	</group>
+	<group name="medium_id">
+		<groupExpression><![CDATA[$F{medium_id}]]></groupExpression>
+	</group>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="COLUMN_6">
+		<groupExpression><![CDATA[$F{COLUMN_6}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="180" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-11" y="0" width="570" height="180" backcolor="#F5EEE1" uuid="4057047d-8749-4a93-b941-5b76858d392f"/>
+				<image>
+					<reportElement x="20" y="30" width="229" height="93" uuid="65ad73ac-ecbe-45a3-ba04-ad85274ea441"/>
+					<imageExpression><![CDATA["C:/Users/MSI/Downloads/small-logo.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement mode="Transparent" x="270" y="10" width="286" height="40" forecolor="#BF7A0B" uuid="58383d27-d8f2-479a-82d9-6c535c74e7da"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+						<font fontName="Algerian" size="20"/>
+					</textElement>
+					<text><![CDATA[Subjects report]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="290" y="52" width="258" height="24" forecolor="#050505" uuid="d0a33860-7035-4432-9372-f14ce48b7b47"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom" markup="html">
+						<font fontName="Algerian" size="12"/>
+					</textElement>
+					<text><![CDATA[Yaathra Higher Education]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="290" y="80" width="258" height="21" forecolor="#050505" uuid="bfdf4c79-364f-4b21-b29e-8ef47f3b05f3"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font fontName="Algerian" size="12"/>
+					</textElement>
+					<text><![CDATA[Institute]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="290" y="100" width="258" height="24" forecolor="#7D7D7D" uuid="80bbce1b-e3c5-4b74-95ea-9082d6caba99"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[Devananda Road, Piliyandala]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="140" width="160" height="28" forecolor="#1B0680" uuid="06c93860-af6b-4828-86d4-b9595914955d"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Subject No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="180" y="140" width="190" height="28" forecolor="#1B0680" uuid="b308741e-6676-4398-8fd5-ea63388b7b57"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Subject Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="370" y="140" width="178" height="28" forecolor="#1B0680" uuid="e694d00c-3845-4f13-a5f1-ac7b6f73ede0"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Subject Medium]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-11" y="0" width="570" height="30" backcolor="#F5EEE1" uuid="0c161d43-4743-43f9-9de2-8b1c298e9b3c"/>
+				<textField>
+					<reportElement x="20" y="0" width="158" height="30" uuid="b0e5979d-d911-4086-a5ff-b714d4681ef1"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{subNo}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="178" y="0" width="190" height="30" uuid="d09b6676-3452-4c66-bbe6-9f7eccf9a211"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="368" y="0" width="178" height="30" uuid="da2dd2f2-cc65-4c09-9f94-1aa8917243fb"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-11" y="0" width="570" height="38" backcolor="#F5EEE1" uuid="531041d1-201d-4d01-80bf-a72838294c52"/>
+				<staticText>
+					<reportElement x="171" y="11" width="228" height="18" forecolor="#969696" uuid="16b543ce-204d-4faf-84f0-ba0fecbc1fb0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[© 2022 Yathra Higher Education Institute. All rights reserved]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
